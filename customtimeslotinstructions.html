@@ -25,6 +25,7 @@
             color: #333;
             font-size: 2.5em;
             margin-bottom: 20px;
+            text-align: center;
         }
         .video-container {
             margin-bottom: 20px;
@@ -47,9 +48,8 @@
             font-size: 1em;
             line-height: 1.6;
         }
-        .contact {
-            font-size: 1.2em;
-            margin-top: 20px;
+        .contact, .features, .testimonials {
+            text-align: center;
         }
         .contact a {
             color: #25D366;
@@ -59,21 +59,38 @@
         .contact a:hover {
             text-decoration: underline;
         }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background: #333;
-            color: #fff;
-            margin-top: 20px;
-            border-radius: 0 0 8px 8px;
+        .features, .testimonials {
+            background: #e9ecef;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .features ul, .testimonials blockquote {
+            list-style: none;
+            padding: 0;
+        }
+        .features li, .testimonials blockquote {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        .testimonials blockquote {
+            border-left: 5px solid #25D366;
+            padding-left: 20px;
+            margin: 0 auto;
+            max-width: 600px;
+        }
+        .testimonials cite {
+            display: block;
+            margin-top: 10px;
+            font-style: italic;
+            color: #555;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>Welcome to Our Landing Page</h1>
-        </header>
+        <h1>Welcome to Our Landing Page</h1>
         
         <div class="video-container">
             <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
@@ -84,14 +101,32 @@
             <p>Welcome to our landing page! We are excited to share more about our services with you. Please watch the video above to get an overview of what we offer. If you have any questions or need further assistance, feel free to reach out to us via WhatsApp.</p>
         </div>
         
+        <div class="section features">
+            <h2>Features</h2>
+            <ul>
+                <li>Feature 1: Describe a key feature of your service or product.</li>
+                <li>Feature 2: Another important feature.</li>
+                <li>Feature 3: Highlight another benefit.</li>
+                <!-- Add more features as needed -->
+            </ul>
+        </div>
+
+        <div class="section testimonials">
+            <h2>What Our Customers Say</h2>
+            <blockquote>
+                "This is a great product! It has really helped me in my daily tasks and I couldn't be happier with the results."
+                <cite>— Customer Name</cite>
+            </blockquote>
+            <blockquote>
+                "Excellent service and fantastic support. Highly recommended for anyone looking for this type of solution."
+                <cite>— Another Customer</cite>
+            </blockquote>
+        </div>
+        
         <div class="section contact">
             <h2>Contact Us</h2>
             <p>Contact us using WhatsApp: <a href="https://wa.me/8801738034690" target="_blank">+8801738034690</a></p>
         </div>
     </div>
-    
-    <footer>
-        &copy; 2024 Your Company Name. All rights reserved.
-    </footer>
 </body>
 </html>
