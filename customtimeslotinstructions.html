@@ -1,0 +1,76 @@
+
+    <div class="wrap">
+        <h1><?php esc_html_e( 'Custom Time Slot With Capacity', 'custom-time-slot-with-capacity' ); ?></h1>
+
+        <!-- Tabs -->
+        <h2 class="nav-tab-wrapper">
+            <a href="#" class="nav-tab nav-tab-active" id="instructions-tab"><?php esc_html_e( 'Instructions', 'custom-time-slot-with-capacity' ); ?></a>
+            <a href="#" class="nav-tab" id="support-tab"><?php esc_html_e( 'Support', 'custom-time-slot-with-capacity' ); ?></a>
+        </h2>
+
+        <!-- Tab Content -->
+        <div id="instructions-content" class="tab-content">
+            <h2><?php esc_html_e( 'Instructions', 'custom-time-slot-with-capacity' ); ?></h2>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/VALID-VIDEO-ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div id="support-content" class="tab-content" style="display: none;">
+            <h2><?php esc_html_e( 'Support', 'custom-time-slot-with-capacity' ); ?></h2>
+            <iframe src="https://devsofficebd.github.io/devsoffice-contact/" style="width: 100%; height: 100vh; border: none;"></iframe>
+        </div>
+    </div>
+
+    <style>
+        .nav-tab-wrapper {
+            margin-bottom: 20px;
+        }
+
+        .nav-tab {
+            padding: 6px 12px;
+            margin: 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            display: inline-block;
+            text-decoration: none;
+            color: #333;
+            background: #f1f1f1;
+        }
+
+        .nav-tab-active {
+            background: #fff;
+            border-bottom: 1px solid transparent;
+            font-weight: bold;
+        }
+
+        .tab-content {
+            padding: 20px 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            background: #fff;
+        }
+    </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const instructionsTab = document.getElementById('instructions-tab');
+            const supportTab = document.getElementById('support-tab');
+            const instructionsContent = document.getElementById('instructions-content');
+            const supportContent = document.getElementById('support-content');
+
+            instructionsTab.addEventListener('click', function(event) {
+                event.preventDefault();
+                instructionsTab.classList.add('nav-tab-active');
+                supportTab.classList.remove('nav-tab-active');
+                instructionsContent.style.display = 'block';
+                supportContent.style.display = 'none';
+            });
+
+            supportTab.addEventListener('click', function(event) {
+                event.preventDefault();
+                supportTab.classList.add('nav-tab-active');
+                instructionsTab.classList.remove('nav-tab-active');
+                supportContent.style.display = 'block';
+                instructionsContent.style.display = 'none';
+            });
+        });
+    </script>
