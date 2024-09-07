@@ -1,98 +1,18 @@
-<style>
-* {
-    padding: 0%;
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.container {
-    height: 100vh;
-    width: 100%;
-    background: linear-gradient(to right, #fff 70%, #ddd 30%);
-    position: relative;
-    overflow: hidden;
-    padding: 10px;
-}
-
-
-a{
-    text-decoration: none;
-    padding: 0.3rem 1.3rem;
-    font-size: 17px;
-    font-weight: bold;
-    color: #494234;
-    position: relative;
-    z-index: 1;
-}
-a::after{
-    content: "";
-    width: 0%;
-    height: 100%;
-    position: absolute;
-    top:0;
-    left:0px;
-    border-radius: 20px;
-    background-color: #C8EBB1;
-    z-index: -1;
-    transition: 0.5s;
-}
-a:hover:after{
-    width: 100%;
-}
-
-
-
-
-.social-links{
-    position: absolute;
-    right: 5%;
-    bottom: 5%;
-}
-.social-links::before{
-    content: "";
-    width: 80%;
-    height: 3px;
-    position: absolute;
-    top:42%;
-    left: -150px;
-    background-color: #494234;
-}
-.social-links i{
-    margin-left: 10px;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background-color: #93C572;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.5s;
-}
-.social-links i:hover{
-    transform: translateY(-5px);
-}
-
-</style>
-<head>
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
-integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-</head>
-
-<body>
-    <div class="container">
-<h1>Welcome to our plugin.</h1>
-<p>Letius sodales fermentum est fringilla pede. Porta dolor erat aliquam posuere magna interdum. Aenean vulputate suscipit integer fringilla taciti elementum penatibus. Consectetuer habitant justo condimentum quis hac. Felis lectus quam placerat arcu dictum. Adipiscing felis efficitur quisque torquent gravida.</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XlxhEy4pAI0?si=YDJYGam9t1w_ZBce" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<strong>Here are our social media links to contact with us. You can talk me using whatsapp.</strong>        
-        <div class="social-links">
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="far fa-envelope"></i>
-        </div>
-
-</body>
-
-</html>
+  <script src="https://cdn.tailwindcss.com"></script>
+<section class="text-gray-600 body-font">
+  <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+    <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Before they sold out
+        <br class="hidden lg:inline-block">readymade gluten
+      </h1>
+      <p class="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
+      <div class="flex justify-center">
+        <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+        <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button</button>
+      </div>
+    </div>
+    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+      <img class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600">
+    </div>
+  </div>
+</section>
